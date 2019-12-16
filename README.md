@@ -2,7 +2,7 @@
 The purpose of this website is the product hunting. Each user after signup and login can upload his/her project and vote for favorite
 project of others. The back-end of the websites is composed of two applications: 1. accounts application that handles user object with 
 functionalities of signup, signin, signout. 2. product application that handles the uploading, voting and presentation of each project.
-The two objects (user and product) are communicating each other during voting and uploading as an authentication requirement.
+The two objects (user and product) are communicating each other during voting and uploading as an authentication requirement as well as identifying voter.
 
 
 
