@@ -53,7 +53,7 @@ DATABASES = {
   Now you should be able to see the migrated files in your local database. You need to install Pgadmin to see it in your local 
    database.
 
-5. Now open cmd and set your dir to test1 folder and run the manage.py by python as follow:
+5. Now open cmd and set your dir to project folder and run the manage.py by python as follow:
    python manage.py runserver
 
 6. Open your browser and browse http://127.0.0.1:8000/
