@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-2">
+        <img src="{{product.icon.url}}" width=100 class="img-fluid">
+    </div>
+    <div class="col-10">
+        <br>
+        <br>
+        <a href="{{poduct.url}}"><h5>{{product.title}}</h5></a>
+    </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="col-8">
+        <img src="{{product.image.url}}" class="img-fluid" width="600">
+    </div>
+    <div class="col-4">
+        <a href="{%url 'upvote' product.id %}"><button class="btn btn-primary btn-lg btn-block"><img src="{%static 'like.png' %}" class="d-inline-block" width="30" height="30" >     Up Vote : {{product.votes_total}}</button></a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <h4>{{product.hunter}}</h4>
+    </div>
+    <div class="col-4 text-right">
+        <h4><img class="d-inline-block" width="30" height="30" src="{%static 'clock.png' %}" alt="">  Hunted by {{product.pub_date_pretty}}</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-8">
+        <p>{{product.body}}</p>
+    </div>
+</div>
+
+{% endblock %}

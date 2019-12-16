@@ -1,7 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 {% block content %}
-<h1>Hi !!!</h1>
+<br>
+<br>
+{%for product in products.all %}
 
+<div class="row pb-3">
+    
+    <div class="col-3">
+        <a href="{%url 'detail' product.id %}">
+        <img src="{{product.image.url}}" class="img-fluid" width="300">
+        </a>
+    </div>
+    <div class="col-6">
+        <p>{{product.summary}}</p>
+    </div>
+    <div class="col-3">
+        <a href="{%url 'upvote' product.id %}"><button class="btn btn-primary btn-lg btn-block"><img src="{%static 'like.png' %}" class="d-inline-block" width="30" height="30" >     Up Vote : {{product.votes_total}}</button></a>
+    </div>
+
+
+</div>
+{% endfor %}
 {% endblock %}

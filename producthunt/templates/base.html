@@ -60,6 +60,10 @@
                 <ul class="navbar-nav ">
                   {% if user.is_authenticated %}
                   <li class="nav-item">
+                    <a class="nav-link" href="{% url 'create'%}">Create  <img src="{%static 'plus.png' %}" class="d-inline-block" width="30" height="30" >
+                    </a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="{% url 'signout'%}">Sign out</a>
                   </li>
                   {% else %}
