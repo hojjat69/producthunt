@@ -49,7 +49,8 @@ DATABASES = {
 
 4. The last stem is migration by writing the following command in the cmd:
    python manage.py migrate
-   Now you should be able to see the migrated files in your local database. You need to install Pgadmin to see it in your local 
+  
+  Now you should be able to see the migrated files in your local database. You need to install Pgadmin to see it in your local 
    database.
 
 5. Now open cmd and set your dir to test1 folder and run the manage.py by python as follow:
