@@ -38,9 +38,12 @@ DATABASES = {
     
     
 
-2. You will also need the connector between Django and PostGreSQL which is called psycopg2. you can use pip tools in python to install  
-   it by following command in cmd: 
+2. You will also need the connectors between Django and PostGreSQL which are called psycopg2 and pillow. you can use pip tools in python to install them by following command in cmd: 
+
    pip install psycopg2
+   
+   
+   pip install pillow
 
 
 3. You need to create migration by writing the following command in cmd:
